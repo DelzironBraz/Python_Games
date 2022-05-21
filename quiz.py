@@ -8,8 +8,6 @@ print("b. social media reaches only a few people at a time")
 print("c. the management structure of the companies")
 print("d. traditional media offers no way for audiences to communicate with media producers\n")
 user_answers.append(input(("What is your choice ? (A), (B), (C) or (D): \n")))
-if user_answers[0] == correct_answers[0]:
-    score +=1
 
 print("2 - Which of the following is NOT a fundamental area of change regarding people's media habits?")
 print("a. conversation")
@@ -17,8 +15,6 @@ print("b. collaboration")
 print("c. choice")
 print("d. communication\n")
 user_answers.append(input(("What is your choice ? (A), (B), (C) or (D): \n")))
-if user_answers[1] == correct_answers[1]:
-    score +=1
 
 print("3 - An important lesson learned in online political campaigns in recent \
 years and other collaborative efforts that had online components is")
@@ -27,8 +23,9 @@ print("b. there is always a couple people who disrupt the work of others in the 
 print("c. people need to be able to meet face to face at times as well as online")
 print("d. social media has still not lived up to its promise of helping people collaborate\n")
 user_answers.append(input(("What is your choice ? (A), (B), (C) or (D): \n")))
-if user_answers[2] == correct_answers[2]:
-    score +=1
+
+for c in range(len(correct_answers)):
+    if user_answers[c] == correct_answers[c]:
+        score += 1
 
 print(f"Score: {score}")
-
