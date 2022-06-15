@@ -1,4 +1,4 @@
-# Python Termninal Games
+# Python Terminal Games
 
 - Quiz
 - Infinite Hangman
